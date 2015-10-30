@@ -22,6 +22,8 @@
 ###严格模式
 >推荐总是在 js 文件头部声明使用严格模式，这样可以使你的代码更加健壮，参考 [MDN 严格模式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)
 
+
+
 	'use strict'
 
 	// ...
@@ -38,6 +40,8 @@
 ##代码规范
 ###对象
 >不要使用保留字 [reserved words](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Reserved_Words) 作为对象属性，IE8 下不支持。[参考](https://github.com/airbnb/javascript/issues/61)
+
+
     // bad
     var superman = {
     class: 'superhero'
@@ -272,6 +276,8 @@
     age: 1024
     };
 >不要加多余的逗号，这可能会在 IE 下引起错误，同时如果多一个逗号某些 ES3 的实现会导致数组长度加1。
+
+
     // bad
     var hero = {
     firstName: 'Kevin',
@@ -378,6 +384,8 @@
 
 ###构造函数/类
 >构造函数/类使用大驼峰命名，即所有单词首字母大写。如下示例：
+
+
     // good
     function MenuButton() {
     }
