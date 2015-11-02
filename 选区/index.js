@@ -41,6 +41,9 @@ $(function () {
       var x = mouseX - firstX;
       var y = mouseY - firstY;
 
+
+      showVal(firstX,firstY);
+
       me.addClass('create-box');
 
       if(needChange) {
@@ -53,37 +56,14 @@ $(function () {
      
       needChange = false;
       me.removeClass('create-box');
+    },
+    mouseout : function (e) {
+      console.log(1);
     }
 
 
 
   });
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   //显示当前坐标值
   function showVal(x, y) {
