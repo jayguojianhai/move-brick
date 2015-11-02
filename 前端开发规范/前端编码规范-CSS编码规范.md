@@ -106,11 +106,11 @@
 
 >建议相关的属性说明放在一组，并按照下面的顺序排列：
 
->1. 定位（position、left、right、top、bottom、z-index）
+>1. 定位（`position、left、right、top、bottom、z-index`）
 
->2. 盒子模型（display、float、width、height、margin、padding、border、border-radius）
+>2. 盒子模型（`display、float、width、height、margin、padding、border、border-radius`）
 
->3. 排印（font、color、background、line-height、text-align）
+>3. 排印（`font、color、background、line-height、text-align`）
 
 > 由于定位可以从正常的文档流中移除元素，并且还能覆盖盒模型相关的样式，因此排在首位。而盒模型决定了组件的尺寸和位置，所以排第二位。排印只是影响元素的细节样式变化，所以放第三位。
 
@@ -158,7 +158,7 @@
     }
 
 ###简写形式的属性声明
->对于 background 和 font 这两个简写形式的属性声明，要么就显式声明所有的值，要么就不要使用简写形式。
+>对于 `background` 和 `font` 这两个简写形式的属性声明，要么就显式声明所有的值，要么就不要使用简写形式。
 
     /* bad */
     .mod-example {
@@ -203,7 +203,7 @@
       background-color: #efefef;
     }
 
->应避免16进制表示法与rgb表示法混用的情况，并优先使用16进制表示法
+>应避免16进制表示法与 `rgb` 表示法混用的情况，并优先使用16进制表示法
 
     /* bad */
     .example-part1 {
@@ -250,18 +250,18 @@
     }
 
 ###自定义 font-family
->对于自定义的 font-family 命名，必须使用项目名前缀作为名字的开始，例如讯盟 bops 系统的自定义字体就应该以 bops- 为前缀，避免和日后的其他项目自定义字体冲突：
+>对于自定义的 `font-family` 命名，必须使用项目名前缀作为名字的开始，例如 fc 系统的自定义字体就应该以 fc- 为前缀，避免和日后的其他项目自定义字体冲突：
 
     /* bad */
     @font-face {
-      /* bops 自定义字体 */
+      /* fc 自定义字体 */
       font-family: icon-font;
       src: url(//at.alicdn.com/t/font_1426561436_1444216.eot);
     }
 
     @font-face {
-      /* bops 自定义字体 */
-      font-family: bops-iconfont; 
+      /* fc 自定义字体 */
+      font-family: fc-iconfont; 
       src: url(//at.alicdn.com/t/font_1426561436_1444216.eot);
     }
 
@@ -347,7 +347,7 @@
       padding-left: 15px;
     }
 
->需要在 javascript 中使用的类名以 J_ 开头，接“大驼峰”命名。例如 J_ExampleClass， 并且这类的 class 不能出现在 CSS 文件中
+>需要在 javascript 中使用的类名以 J_ 开头，接“大驼峰”命名。例如 `J_ExampleClass`， 并且这类的 class 不能出现在 CSS 文件中
 
     <!-- Bad Html Class for Javascript Hook -->
     <div class="mod-example"></div>

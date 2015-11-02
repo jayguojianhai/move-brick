@@ -53,7 +53,7 @@
     };
 
 ###数组
->使用 Array#push 为数组添加元素
+>使用 `Array#push` 为数组添加元素
 
     var someStack = [];
 
@@ -75,7 +75,7 @@
     'was thrown because of Batman.' +
     'fast.';
 ###函数
->不要在非函数块（if, while 等）里声明函数，如有需要，可以把函数赋值给一个变量。
+>不要在非函数块（`if, while` 等）里声明函数，如有需要，可以把函数赋值给一个变量。
 
     // bad
     if (currentUser) {
@@ -97,7 +97,7 @@
     test();
     }
 
->绝对不要把参数命名为 arguments, 这将会覆盖arguments 对象.
+>绝对不要把参数命名为 `arguments`, 这将会覆盖 `arguments` 对象.
 
     // bad
     function nope(name, options, arguments) {
@@ -131,7 +131,7 @@
 	// good
 	var superPower = new SuperPower();
 
->推荐使用多个 var 声明多个变量。理由：方便增删；多 var 可以更好的帮助养成良好的习惯，而不发生遗漏 var 而导致全局变量的风险。
+>推荐使用多个 `var` 声明多个变量。理由：方便增删；多 `var` 可以更好的帮助养成良好的习惯，而不发生遗漏 `var` 而导致全局变量的风险。
 
     // bad
     var first = 1,
@@ -205,6 +205,7 @@
     }
 
 >块级代码 (if, else, for 等) 基本与函数保持一致
+
     // bad
     if(hasName){ 
     }
@@ -217,6 +218,7 @@
     }
 
 >对象
+
     // bad
     var base = {
     width : 100,
@@ -229,7 +231,8 @@
     height: 200
     };
 
->key, value 之间只需要一个空格，因为这样更加自然与易读。
+> `key, value` 之间只需要一个空格，因为这样更加自然与易读。
+
     // bad
     {
     a           : 'short',
@@ -249,6 +252,7 @@
     }
 
 >避免使用过长的链式调用；调用比较长时建议使用换行和缩进来组织结构
+
     // bad
     $('#items').find('.selected').highlight().end().find('.open').updateCount();
 
@@ -262,6 +266,7 @@
 
 ###逗号
 >逗号后置
+
     // bad
     var options = {
       name: '马云'
@@ -276,7 +281,6 @@
     age: 1024
     };
 >不要加多余的逗号，这可能会在 IE 下引起错误，同时如果多一个逗号某些 ES3 的实现会导致数组长度加1。
-
 
     // bad
     var hero = {
@@ -313,7 +317,7 @@
     // good
     str = String(str);
 
->对数字使用 parseInt 并且总是带上类型转换的基数，备注：parseFloat 方法没有基数参数
+>对数字使用 `parseInt` 并且总是带上类型转换的基数，备注：`parseFloat` 方法没有基数参数
 
     var inputValue = '4';
 
@@ -414,7 +418,7 @@
 
     // bad
     this.name = true;
->使用「表示肯定的」词汇来命名布尔值，而不是「表示否定的」。因为这样更易读，并且 具有更好的兼容性：因为如果此变量未定义，那么其默认值为undefined，等价于 false。
+>使用「表示肯定的」词汇来命名布尔值，而不是「表示否定的」。因为这样更易读，并且 具有更好的兼容性：因为如果此变量未定义，那么其默认值为 `undefined`，等价于 `false`。
 
     // good
     this.available = false;
@@ -451,7 +455,7 @@
 >注释的目的是：提高代码的可读性，从而提高代码的可维护性。
 
 ###单行注释
->单行注释使用 //, 一般面向的是语句或者简单逻辑的代码块 (if, for, function)
+>单行注释使用 //, 一般面向的是语句或者简单逻辑的代码块 `(if, for, function)`
 
 >应独立于一行，不要追加在某条语句的后面
 
@@ -484,7 +488,9 @@
 ###多行注释：
 > 一般情况下，多行注释用于函数/对象/文件。
 
-> 多行注释使用 /** */ 或 /* */, 不推荐使用多行的 // 来替代 /**/.
+> 多行注释使用 **`/** */ 或 /* */, 不推荐使用多行的 // 来替代 /**/`**
+
+
     // bad
     // it's foo
     // but not bar
@@ -515,7 +521,7 @@
 * 示例，可选
 * 参数说明，可选
 * 返回值说明，有则必选
-* api 类型(public/private), 可选
+* api 类型(`public/private`), 可选
 
 >如下，是一个良好风格的示例：
 

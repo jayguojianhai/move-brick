@@ -9,13 +9,14 @@
 
 #目录结构
 	move-brick/
-		e-books	//电子书目录
-		plugins	//插件目录
-			Javascript	//原生js插件
-			jQuery 	//jQuery插件
-		H5+CS3 	//h5、cs3特效
-		demo		//示例
-		前端开发规范
+	  navigation/			//用于存放前端相关站点、资讯、博客等资源导航
+	  e-books/				//电子书目录
+	  plugins/				//插件目录
+		Javascript/			//原生js插件
+		jQuery/ 			//jQuery插件
+	  H5+CS3/				//h5、cs3特效
+	  demo/					//示例
+	  前端开发规范/			//
 
 
 
@@ -23,22 +24,13 @@
 
 # 修改日志
 
+### 2015年11月2日
+- 初步划分文件目录组织结构
+
 ### 2015年10月30日
 
 - 创建选框基础demo
 - 添加前端编码规范（css/js/html）
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 >项目参与者：fc、jgs、gjh
