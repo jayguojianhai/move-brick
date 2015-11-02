@@ -9,15 +9,17 @@
 
 #目录结构
 	move-brick/
-	  js/			//
-		tool/		//工具、第三方插件文件目录
-	  	base/		//基础文件目录
-	  css/			//
-		xxx			//
-	  doc/			//
-		xxx			//
-	  demo/			//
-	  case/			//案例
+		e-books	//电子书目录
+		plugins	//插件目录
+			Javascript	//原生js插件
+			jQuery 	//jQuery插件
+		H5+CS3 	//h5、cs3特效
+		demo		//示例
+		前端开发规范
+
+
+
+
 
 # 修改日志
 
