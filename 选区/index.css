@@ -15,6 +15,7 @@ p{
 	width: 500px;
 	height: 500px;
 	position: relative;
+	background: url(cat.jpg) no-repeat center;
 }
 .create-box{
 	cursor:crosshair

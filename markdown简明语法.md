@@ -38,4 +38,7 @@
 * 可以在文本种直接使用html标签，但是要注意在使用的时候，前后加上空行
 * 文本前后各加一个符号，表示斜体
 
->参考 <http://lutaf.com/markdown-simple-usage.htm>
+
+> 参考 <http://lutaf.com/markdown-simple-usage.htm>
+> 
+>  [查看更多](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown)
