@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>仿天猫拖动验证的特效——拖动验证jquery插件</title>
+  <link rel="stylesheet" href="drag.css">
+  <script src="../jquery-2.1.4.js"></script>
+</head>
+<body>
+  <div id="drag"></div>
+  <script>
+    $(function () {
+      var drag = $('#drag');
+      var x = 0;
+      
+      //添加背景，文字，滑块
+      var tpl = '<div class="drag_bg"></div><div class="drag_text" onselectstart="return false;" unelectable="on">拖动滑块验证</div><div class="handler handler_bg"></div>';
+
+      drag.append(tpl);
+
+      var handler = drag.find('.handler');
+      var drag_bg = drag.find('.drag_bg');
+      var text = drag.find('.drag_text');
+      var maxWidth = drag.width() - handler.width(); //能滑动的最大间距
+
+      handler.mousedown(function (e) {
+        var e = e || window.event;
+        x = e.clientX - parseInt(handler.css('left'), 10);
+      });
+
+
+
+
+
+
+    });
+  </script>
+</body>
+</html>

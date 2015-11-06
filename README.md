@@ -9,7 +9,7 @@
 
 #目录结构
 	move-brick/
-	  navigation/			//用于存放前端相关站点、资讯、博客等资源导航
+	  md/					//用于存放前端相关站点、资讯、博客、等资源导航
 	  e-books/				//电子书目录
 	  plugins/				//插件目录
 		Javascript/			//原生js插件
