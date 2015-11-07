@@ -1,0 +1,60 @@
+/**
+ * base.css
+ * @authors tammy (http://tammylights.com)
+ * @date    2015-10-28 15:26:04
+ * @version 1.0
+ */
+
+/*初始化默认*/
+*, *:before, *:after { webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+a, address, b, body, code, dd, del, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, ul, input { margin: 0; padding: 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+button, html input[type=button], input[type=submit] { -webkit-apperance: button; cursor: pointer; }
+button[disabled], html input[disabled] { cursor: default; }
+ol, ul { list-style: none; }
+img { border: 0; vertical-align: middle; }
+em, i { font-style: normal; }
+.fl { float: left; }
+.fr { float: right; }
+.al { text-align: left; }
+.ac { text-align: center; }
+.ar { text-align: right; }
+.hide { display: none; }
+.clear, .clr { display: block; overflow: hidden; clear: both; height: 0; line-height: 0; font-size: 0; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { *zoom: 1; }
+.w { width: 990px; margin: 0 auto; }
+.caret { display: inline-block; width: 0; height: 0; margin-left: 2px; vertical-align: middle; border-top: 4px solid; border-right: 4px solid transparent; border-left: 4px solid transparent; }
+.img-circle { border-radius: 50%; }
+.pull-left { float: left !important; }
+.pull-right { float: right !important; }
+body { font: 14px/150% '宋体', Arial, Verdana, "\5b8b\4f53"; color: #666; background: #fff; }
+a { text-decoration: none; color: #333; }
+a:link { color: #333; }
+a:visited { color: #333; }
+a:hover, a:active, a:focus { color: #333; -moz-outline: none; outline: none; }
+
+/*按钮*/
+.button, a.button { display: inline-block; border: 0px; cursor: pointer; padding: 8px 12px; text-align: center; border-radius: 4px; color: #fff; font-size: 14px; font-family: 'microsoft yahei'; }
+.button.orange_btn { background-color: #F29A64; }
+.button.orange_btn:hover { background-color: #FFB384; }
+.button.grey_btn { background-color: #A9A9A9; }
+.button.grey_btn:hover { background-color: #B5B5B5; }
+.button.disabled_btn { background-color: #A9A9A9; }
+
+/*图标*/
+.icon { display: inline-block; background: url(../images/icon.png) no-repeat; vertical-align: middle; }
+.icon.icon-whiteEmail { background-position: -19px 0px; width: 14px; height: 15px; }
+.icon.icon-user { background-position: -1px 0px; width: 14px; height: 15px; }
+.icon.icon-greenCircle { width: 12px; height: 12px; border-radius: 50%; background: #3c763d; }
+.icon.icon-big { width: 15px; height: 13px; background-position: -35px -2px; }
+.icon.icon-lt { width: 5px; height: 9px; background-position: -52px -2px; }
+.icon.icon-lt-down { width: 9px; height: 5px; background-position: -51px -12px; }
+.icon.icon-dashboard { width: 16px; height: 11px; background-position: 0px -23px; }
+.icon.icon-widget { width: 14px; height: 11px; background-position: -22px -23px; }
+.icon.icon-charts { width: 15px; height: 12px; background-position: -42px -23px; }
+.icon.icon-computer { width: 15px; height: 10px; background-position: -62px -23px; }
+.icon.icon-edit { width: 15px; height: 11px; background-position: -1px -41px; }
+.icon.icon-table { width: 13px; height: 11px; background-position: -22px -41px; }
+.icon.icon-message { width: 14px; height: 11px; background-position: -62px -41px; }
